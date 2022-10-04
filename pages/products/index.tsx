@@ -30,7 +30,7 @@ export default function ProductsListPage({ products }: ProductsListPageProps) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:4000/products");
+  const res = await fetch("https://633b8350f11701a65f644cfe.mockapi.io/products");
   const data = await res.json();
   return {
     props: {

@@ -35,7 +35,7 @@ export async function getStaticPaths() {
 export async function getStaticProps(context: any) {
   const { params } = context;
   const res = await fetch(
-    `http://localhost:4000/products/${params.productsId}`
+    `https://633b8350f11701a65f644cfe.mockapi.io/products/${params.productsId}`
   );
   const data = await res.json();
 
